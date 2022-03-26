@@ -1,0 +1,1 @@
+validaArray(["1", "2"])
