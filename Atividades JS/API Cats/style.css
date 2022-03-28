@@ -1,0 +1,8 @@
+section img {
+  max-height: 800px;
+  max-width: 1000px;
+}
+
+button {
+  display: block;
+}
