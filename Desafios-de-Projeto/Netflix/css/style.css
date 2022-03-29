@@ -1,0 +1,131 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #0a0a0a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preta);
+  font-family: "Bebas-Neue", sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.logo {
+  color: var(--vermelho);
+  font-size: 40px;
+  margin-left: 8px;
+}
+
+nav a {
+  color: rgb(221, 219, 219);
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url(../img/capa-house.jpg);
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .container {
+  margin-left: 20px;
+  width: 60%;
+}
+
+.title {
+  margin-top: 5%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.filme-principal .description {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: var(--vermelho);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 14px;
+  transition: 0.3s ease all;
+}
+
+.btn:hover {
+  width: 175px;
+  height: 40px;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: 0.3s ease all;
+}
+
+.carrosel-filme {
+  margin-top: 10px;
+}
+
+.box-filme:hover {
+  opacity: 0.7;
+}
+
+.item button {
+  opacity: 0;
+  background-color: var(--vermelho);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5px;
+  margin-left: 25%;
+  transition: 0.3s ease all;
+  border-color: transparent;
+}
+
+.item button:hover {
+  font-size: 15.5px;
+  cursor: pointer;
+}
+
+.item:hover button {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+}
