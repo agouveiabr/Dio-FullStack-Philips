@@ -4,7 +4,7 @@ body {
   font-weight: bold;
 }
 
-.quadrado {
+.box {
   display: inline-block;
   width: 50px;
   text-align: center;
