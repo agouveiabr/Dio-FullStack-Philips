@@ -38,6 +38,12 @@ p {
   top: 179px;
   background-image: url(../imgs/apache.png);
 }
+#disparo {
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  background-image: url(../imgs/disparo.png);
+}
 
 #inimigo1 {
   width: 256px;
@@ -76,6 +82,8 @@ p {
   text-align: center;
   padding: 10px;
   padding-bottom: 30px;
+  border: 5px solid #603a03;
+  border-radius: 5px;
 }
 
 #btn-start {
@@ -99,7 +107,39 @@ p {
   cursor: pointer;
 }
 
+#btn-restart {
+  font-family: "Goldman", cursive;
+  position: absolute;
+  width: 220px;
+  height: 35px;
+  border-radius: 5px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: black;
+  background-color: #fff;
+}
+
+#btn-restart:hover {
+  background: #ffffff;
+  width: 230px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 /*? Animacoes */
+#explosao1 {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
+#explosao2 {
+  width: 15px;
+  height: 87px;
+  position: absolute;
+}
 
 .anima1 {
   /*? Animação do Helicoptero aliado */
@@ -131,6 +171,107 @@ p {
   -moz-animation: play2 0.9s steps(12) infinite;
   -ms-animation: play2 0.9s steps(12) infinite;
   -o-animation: play2 0.9s steps(12) infinite;
+}
+
+#explosao3 {
+  width: 44px;
+  height: 51px;
+  position: absolute;
+}
+
+.anima4 {
+  width: 44px;
+  height: 51px;
+  background-image: url(../imgs/amigo_morte.png);
+  animation: play3 0.5s steps(7) infinite;
+  -webkit-animation: play3 0.5s steps(7) infinite;
+  -moz-animation: play3 0.5s steps(7) infinite;
+  -ms-animation: play3 0.5s steps(7) infinite;
+  -o-animation: play3 0.5s steps(7) infinite;
+}
+
+#placar {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 590px;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+#energia {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 750px;
+  top: 7px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #603a03;
+}
+
+#fim {
+  width: 350px;
+  height: 220px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-webkit-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-moz-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-ms-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
+}
+
+@-o-keyframes play3 {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -308px;
+  }
 }
 
 @keyframes play2 {
